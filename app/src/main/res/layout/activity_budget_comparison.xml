@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Budget Comparison"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <!-- City 1 Column -->
+    <TextView
+        android:id="@+id/city1_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="City 1"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/title_text"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="24dp"/>
+
+    <TextView
+        android:id="@+id/rent_city1_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rent: $1200"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/city1_label"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/groceries_city1_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Groceries: $400"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/rent_city1_text"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/utilities_city1_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Utilities: $150"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/groceries_city1_text"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="8dp"/>
+
+    <!-- City 2 Column -->
+    <TextView
+        android:id="@+id/city2_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="City 2"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/title_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp"/>
+
+    <TextView
+        android:id="@+id/rent_city2_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rent: $1400"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/city2_label"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/groceries_city2_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Groceries: $500"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/rent_city2_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/utilities_city2_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Utilities: $170"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/groceries_city2_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
